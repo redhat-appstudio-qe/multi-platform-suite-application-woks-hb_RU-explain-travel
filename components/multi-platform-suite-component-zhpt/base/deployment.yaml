@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: multi-platform-suite-component-zhpt
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-appstudio-qe/multi-platform-build-tenant/multi-platform-suite-application-woks/multi-platform-suite-component-zhpt@sha256:222804daf06d3af5f85a52f287ea744a4e97abdd44c60e582b97fab88a45f816
         name: my-go
         ports:
         - containerPort: 8081
