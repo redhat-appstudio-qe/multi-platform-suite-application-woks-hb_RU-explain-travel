@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multi-platform-suite-component-zhpt
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-platform-build-tenant/multi-platform-suite-application-woks/multi-platform-suite-component-zhpt@sha256:222804daf06d3af5f85a52f287ea744a4e97abdd44c60e582b97fab88a45f816
+        name: my-go
+        resources: {}
+status: {}
